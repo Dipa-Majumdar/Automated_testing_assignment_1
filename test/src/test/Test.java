@@ -55,15 +55,14 @@ public class Test
                 driver.findElement(By.xpath("//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/span/span")).click();
                 
                 driver.findElement(By.xpath("//*[@id=\"header\"]/div[3]/div/div/div[3]/div/a")).click();
-                
-                driver.findElement(By.xpath("//*[@id=\"cart_quantity_up_1_1_0_0\"]/span/i")).click();
-                driver.findElement(By.xpath("//*[@id=\"cart_quantity_up_1_1_0_0\"]/span/i")).click();
-                driver.findElement(By.xpath("//*[@id=\"cart_quantity_up_1_1_0_0\"]/span/i")).click();
+                for(int i=0;i<4;i++)
+                {
                 driver.findElement(By.xpath("//*[@id=\"cart_quantity_up_1_1_0_0\"]/span/i")).click();
                 
+                       }
                 driver.findElement(By.xpath("//*[@id=\"center_column\"]/p[2]/a[1]/span")).click();
                     
-                   
+         
                  
                 }
                 catch(Exception e)
